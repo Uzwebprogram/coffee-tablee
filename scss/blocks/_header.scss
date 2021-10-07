@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 43px;
+  padding-bottom: 43px;
+
+  &__logo {
+    display: block;
+  }
+
+  &__menu {
+    display: none;
+  }
+}
+
+.navs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+
+  &__item:not(:last-child) {
+    margin-right: 33px;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $main-gray;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  
+    &:active {
+      color: $main-dark;
+    }
+  }
+}
+
+// Tablet
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header {
+    padding-top: 40px;
+    padding-bottom: 53px;
+  }
+}
+
+// Mobile: Desktop yondashuv: 375px
+@media only screen and (max-width: 375px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .header {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 40px;
+
+    &__logo {
+      flex-shrink: 0;
+      width: 163px;
+      height: 18px;
+    }
+
+    .navs {
+      display: none;
+      padding-top: 40px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.8));
+      flex-direction: column;
+      align-items: center;
+
+      &__item {
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+
+      &__link {
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: $main-dark;
+        text-transform: capitalize;
+      }
+    }
+
+    &__menu {
+      display: block;
+      width: 16px;
+      height: 15px;
+      border: none;
+      background-color: transparent;
+      background-image: url("./../image/menu.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      
+      &--active {
+        background-image: url("./../image/menu-x.svg");
+      }
+
+      &--active + .navs {
+        display: flex;
+      }
+    }
+  }
+}

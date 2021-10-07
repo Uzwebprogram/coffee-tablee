@@ -1,0 +1,92 @@
+.hero {
+  display: flex;
+  background-image: url("./../../image/Bitmap.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  padding-left: 85px;
+  border-radius: 10px;
+  &__left {
+    max-width: 493px;
+  }
+
+  &__heading {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  &__text {
+    margin-top: 32px;
+    margin-bottom: 56px;
+    color: $main-cream;
+    padding-right: 48px;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.8;
+  }
+
+  &__link {
+    padding: 15px 31px;
+    background-color: $main-green;
+    color: $main-cream;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 900;
+    font-family: "Fraunces";
+    text-decoration: none;
+  }
+}
+
+// Tablet
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding: 104px 0;
+    padding-left: 58px;
+    background-image: url("./../../image/Bitmap-table.png");
+
+    &__left {
+      max-width: 398px;
+    }
+
+    &__heading {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &__text {
+      margin-top: 24px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 375px){
+  .hero {
+    padding: 100px 24px;
+
+    &__left {
+      text-align: center;
+    }
+
+    &__heading {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__text {
+      padding: 0;
+      margin-top: 24px;
+      margin-bottom: 39px;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.about-hero{
+    background-image: url(./../../image-about/hero-about.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    max-width: 1280px;
+    height: 450px;
+    margin-bottom: 168px;
+
+    &__left-side{
+        width: 445px;
+        height: 176px;
+        padding-top: 137px;
+        margin-left: 85px;
+
+        &__heading{
+            font-family: "Fraunces", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 48px;
+            color: #FEFCF7;
+            margin-bottom: 24px;
+        }
+
+        &__text{
+            font-family: "Barlow", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FEFCF7;
+        }
+    }
+}
+
+
+// tablet 768
+@media only screen and (max-width: 768px) {
+    .about-hero{
+        max-width: 689px;
+        background-image: url(./../../image-about/about-hero-tablet.png);
+        border-radius: 10px;
+        
+        &__left-side{
+            width: 398px;
+            height: 164px;
+            padding-top: 118px;
+            margin-left: 58px;
+
+            &__heading{
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 40px;
+                color: #FEFCF7;
+            }
+
+            &__text{
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 25px;
+                color: #FEFCF7;
+                mix-blend-mode: normal;
+                opacity: 0.7;
+            }
+
+        }
+
+    }
+} //768
+
+// tablet 375
+@media only screen and (max-width: 375px){
+    .about-hero{
+        max-width: 327px;
+        background-image: url(./../../image-about/about-hero-mobile.png);
+        // margin-top: 41px;
+        border-radius: 10px;
+
+        &__left-side{
+            width: 279px;
+            height: 202px;
+            padding-top: 116px;
+            padding-bottom: 87px;
+            margin: 0 auto;
+            text-align: center;
+
+            &__heading{
+                font-size: 28px;
+                line-height: 28px;
+                text-align: center;
+                color: #FEFCF7;
+                margin-bottom: 24px;
+            }
+
+            &__text{
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+                color: #FEFCF7;
+                mix-blend-mode: normal;
+                opacity: 0.7;
+            }
+        }
+    }
+}  //375
+

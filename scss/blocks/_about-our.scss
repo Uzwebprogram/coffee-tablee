@@ -1,0 +1,128 @@
+.commitment{
+    display: flex;
+    max-width: 1110px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    &__left-side{
+        content: "";
+        background-image: url(./../../image-about/commitment-about.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        display: block;
+        width: 445px;
+        height: 520px;
+
+    }
+
+    &__right-side{
+        width: 540px;
+        // height: 360px;
+
+        &__heading{
+            font-family: "Fraunces", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 48px;
+            color: #333D4B;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__text{
+            font-family: "Barlow", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: #333D4B;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            width: 540px;
+            height: 260px;
+            margin: 0;
+            padding: 0;
+            
+        }
+    }
+}
+
+
+
+//tablet 768px
+@media only screen and (max-width: 768px) {
+    .commitment{
+        max-width: 689px;
+
+
+        &__left-side{
+            max-width: 281px;
+            height: 470px;
+            background-image: url(./../../image-about/about-commitment-tablet.png);
+        }
+
+        &__right-side{
+            width: 339px;
+
+            &__heading{
+                font-size: 32px;
+                line-height: 48px;
+                margin-bottom: 30px;
+            }
+
+            &__text{
+                font-size: 15px;
+                line-height: 25px;
+                width: 339px;
+            }
+        }
+
+    }
+} //768
+
+//mobile 375px
+@media only screen and (max-width: 375px){
+    .commitment{
+        max-width: 327px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+
+        &__left-side{
+            // content: "";
+            background-image: url(./../../image-about/about-commitment-mobile.png);
+            display: block;
+            width: 327px;
+            height: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            margin: 0 auto;
+            margin-bottom: 48px;
+            
+            
+        }
+
+        &__right-side{
+            width: 327px;
+
+            &__heading{
+                font-size: 32px;
+                line-height: 48px;
+                text-align: center;
+                color: #333D4B;
+            }
+
+            &__text{
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+                color: #333D4B;
+                mix-blend-mode: normal;
+                opacity: 0.8;
+            }
+        }
+    }
+}  //375
